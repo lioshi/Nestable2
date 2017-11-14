@@ -87,7 +87,8 @@
             html += '</' + options.itemNodeName + '>';
 
             return html;
-        }
+        },
+        afterInit: null
     };
 
     function Plugin(element, options) {
@@ -115,6 +116,11 @@
         }
 
         this.init();
+
+        /* callback for init () */
+        if (typeof this.options.afterInit == 'function') {
+            this.options.afterInit.call(this, this.el);
+        }
     }
 
     Plugin.prototype = {
