@@ -84,6 +84,7 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #1981b5;
 }
 
 .dd-item>button.dd-collapse:before {
