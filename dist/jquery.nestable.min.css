@@ -28,7 +28,7 @@
     margin: 0;
     padding: 0;
     min-height: 20px;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 20px
 }
 
@@ -36,7 +36,7 @@
     display: block;
     height: 40px;
     margin: 5px 0;
-    padding: 10px;
+    padding: 4px 10px;
     color: #333;
     text-decoration: none;
     font-weight: 700;
@@ -93,6 +93,7 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #1981b5;
 }
 
 .dd-expand {
@@ -150,7 +151,7 @@
     padding: 0px 10px;
     font-size: 1.5em;
     cursor: pointer;
-    color: #7a7a79;
+    color: #CCCCCC;
 }
 
 .dd-handle i.fa:hover {
@@ -161,14 +162,14 @@
     right: 5px;
 }
 
-.dd-handle i.fa-pencil {
-    right: 35px;
-}
-
 .dd-handle i.fa-users {
     right: 65px;
 }
 
 .dd-handle i.fa-upload {
     right: 95px;
+}
+
+.dd-handle i.fa-pencil {
+    position: relative;
 }
