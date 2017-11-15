@@ -46,13 +46,21 @@
     box-sizing: border-box
 }
 
+li.dd-item[data-type="d"] .dd-handle {
+    background-color: rgba(78, 152, 189, 0.25);
+}
+
+li.dd-item[data-type="f"] .dd-handle {
+    background-color: rgba(78, 152, 189, 0.15);
+}
+
 .dd-handle:hover {
     background: transparent
 }
 
 .dd-handle input {
     border: white;
-    background-color: #cccccc;
+    background-color: #ffffff;
     padding: 5px 5px;
     font-weight: 700;
     height: 30px;
@@ -110,6 +118,9 @@ span.dd-content.dd-nodrag:after {
     padding: 5px 10px;
 }
 
+span.dd-content.dd-nodrag:hover:after {
+    color: #999999;
+}
 
 .dd-item>button.dd-collapse:before {
     content: '\f07c';
@@ -176,7 +187,7 @@ span.dd-content.dd-nodrag:after {
     padding: 0px 10px;
     font-size: 1.5em;
     cursor: pointer;
-    color: #CCCCCC;
+    color: #aaaaaa;
 }
 
 .dd-handle i.fa:hover {
@@ -214,7 +225,7 @@ li .dd-content.dd-nodrag {
     padding: 5px 0;
 }
 li .dd-content.dd-nodrag:hover {
-    background-color: #CCCCCC;
+    background-color: #ffffff;
 }
 
 .dd-item:hover {
