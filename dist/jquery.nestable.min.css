@@ -34,7 +34,7 @@
 
 .dd-handle {
     display: block;
-    height: 40px;
+    min-height: 30px;
     margin: 5px 0;
     padding: 5px 10px;
     color: #333;
@@ -43,7 +43,8 @@
     border: 1px solid #ccc;
     background: #fafafa;
     border-radius: 3px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    line-height: 10px;
 }
 
 li.dd-item[data-type="d"] .dd-handle {
@@ -64,10 +65,11 @@ li.dd-item[data-type="f"] .dd-handle {
     padding: 5px 5px;
     font-weight: 700;
     height: 30px;
+    max-width: 80%;
 }
 
 .dd-handle span {
-    line-height: 30px;
+    line-height: 20px;
 }
 
 .dd-item>button {
@@ -223,6 +225,9 @@ span.dd-content.dd-nodrag:hover:after {
 li .dd-content.dd-nodrag {
     cursor: pointer;
     padding: 5px 0;
+    max-width: 70%;
+    overflow: hidden;
+    display: inline-block;
 }
 li .dd-content.dd-nodrag:hover {
     background-color: #ffffff;
